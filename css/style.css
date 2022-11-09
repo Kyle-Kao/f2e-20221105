@@ -4,9 +4,13 @@
   box-sizing: border-box;
   font-family: "Noto Serif TC"; }
 
+body {
+  overflow-x: hidden; }
+
 a {
   color: #000;
-  text-decoration: none; }
+  text-decoration: none;
+  cursor: pointer; }
 
 img {
   max-width: 100%;
@@ -149,6 +153,18 @@ li {
     border-radius: 40px;
     padding: 6.5px 25px; }
 
+.largeBar {
+  font-size: 60px;
+  font-weight: 900;
+  color: #fff;
+  background-color: #38241b;
+  padding: 40px;
+  width: 110%;
+  text-align: center;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); }
+
 .guide {
   background: url("../img/largebg.png") no-repeat center/cover;
   width: 100%;
@@ -171,8 +187,178 @@ li {
     position: relative; }
     .guide .lineBrown:before {
       position: absolute;
-      content: '';
+      content: "";
       width: 100%;
       height: 4px;
       background-color: #38241b;
       bottom: -8px; }
+  .guide .company {
+    background: url("../img/companybg.png") no-repeat center/100% 100%;
+    width: 100%;
+    height: 530px;
+    padding: 15px 45px 0; }
+    .guide .company.signName {
+      margin: 40px 0; }
+    .guide .company.company3 {
+      margin-bottom: 175px; }
+    .guide .company_nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      justify-content: space-between; }
+      .guide .company_nav .logoName {
+        font-size: 44px;
+        color: #fff;
+        font-weight: 700; }
+        .guide .company_nav .logoName span {
+          margin-left: 20px; }
+    .guide .company_context {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      justify-content: flex-start;
+      padding: 70px 0 0 120px; }
+      .guide .company_context .logoImg.mouse {
+        position: relative;
+        width: 313px;
+        height: 290px; }
+        .guide .company_context .logoImg.mouse:before {
+          position: absolute;
+          content: "";
+          width: 60px;
+          height: 98px;
+          left: 50%;
+          bottom: 8%;
+          transform: translateX(-50%);
+          background: url("../img/companyimg1.png") no-repeat center/contain; }
+      .guide .company_context .logoImg.logoImg2 {
+        width: 218px;
+        height: 282px; }
+      .guide .company_context .logoImg.logoImg3 {
+        width: 297px;
+        height: 245px; }
+      .guide .company_context .textBox {
+        margin-left: 87px; }
+        .guide .company_context .textBox h2 {
+          font-size: 44px;
+          color: #38241b;
+          font-weight: 900; }
+        .guide .company_context .textBox p {
+          font-size: 24px;
+          color: #38241b;
+          margin: 20px 0; }
+        .guide .company_context .textBox .btnBox {
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          .guide .company_context .textBox .btnBox > a {
+            color: #38241b;
+            border: 3px solid #38241b;
+            font-size: 28px;
+            border-radius: 30px;
+            width: 180px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3); }
+          .guide .company_context .textBox .btnBox .article {
+            color: #fff;
+            background-color: #951205;
+            border: none;
+            margin-left: 20px; }
+  .guide .timeRange ul {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    position: relative;
+    margin-top: 90px; }
+    .guide .timeRange ul:before {
+      position: absolute;
+      content: '';
+      width: 75%;
+      height: 5px;
+      background-color: #38241b;
+      top: 36%; }
+    .guide .timeRange ul.justifyCenter {
+      justify-content: center;
+      width: fit-content;
+      margin: 90px auto 0; }
+      .guide .timeRange ul.justifyCenter li + li {
+        margin-left: 214px; }
+      .guide .timeRange ul.justifyCenter:before {
+        top: 45%; }
+    .guide .timeRange ul li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column; }
+      .guide .timeRange ul li .title {
+        font-size: 30px;
+        color: #38241b;
+        margin-bottom: 20px; }
+      .guide .timeRange ul li .square {
+        width: 49px;
+        height: 49px;
+        transform: rotate(45deg);
+        background-color: #38241b; }
+      .guide .timeRange ul li .describe {
+        font-size: 24px;
+        color: #38241b;
+        line-height: 2;
+        margin-top: 30px; }
+  .guide .timeRange_des {
+    text-align: center;
+    font-size: 28px;
+    color: #38241b;
+    line-height: 2;
+    margin: 45px 0 90px; }
+  .guide .gradeBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90px; }
+    .guide .gradeBox_item.item2 {
+      margin: 0 20px; }
+    .guide .gradeBox_item .itemImg {
+      width: 385px;
+      height: 374px; }
+    .guide .gradeBox_item .itemText {
+      font-size: 26px;
+      color: #38241b;
+      text-align: center;
+      margin-top: 20px; }
+  .guide .gradeNotice {
+    font-size: 36px;
+    color: #38241b;
+    margin: 105px 0 10px;
+    text-align: center; }
+  .guide .shareBox {
+    margin: 60px 0; }
+    .guide .shareBox ul {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .guide .shareBox ul.teacherGroup {
+        margin-top: 50px; }
+        .guide .shareBox ul.teacherGroup li:nth-of-type(1) {
+          background: url("../img/teacher3.png") no-repeat center/100% 100%;
+          padding-top: 20px; }
+        .guide .shareBox ul.teacherGroup li:nth-of-type(2) {
+          background: url("../img/teacher4.png") no-repeat center/100% 100%;
+          margin-left: 20px; }
+      .guide .shareBox ul li {
+        width: 520px;
+        height: 740px;
+        padding: 20px 60px 25px; }
+        .guide .shareBox ul li:nth-of-type(1) {
+          background: url("../img/teacher1.png") no-repeat center/100% 100%;
+          padding-top: 45px; }
+        .guide .shareBox ul li:nth-of-type(2) {
+          background: url("../img/teacher2.png") no-repeat center/100% 100%;
+          margin-left: 20px; }
+    .guide .shareBox_title {
+      font-size: 44px;
+      color: #38241b;
+      font-weight: 900;
+      text-align: center; }
