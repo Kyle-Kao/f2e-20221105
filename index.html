@@ -7,234 +7,299 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+        AOS.init();
+    </script>
 </head>
 
 <body>
-    <nav class="nav">
-        <div class="logo"><img src="./img/logo.png" alt="" /></div>
-        <div class="joinBox">
-            <a href="">關卡任務</a>
-            <a href="">競賽說明</a>
-            <a href="" class="joinBox_sign">立即報名</a>
-        </div>
-    </nav>
-
-    <section class="mainIndex">
-        <div class="mainText">
-            <div class="leftPage">
-                <div class="mainText_f2e">
-                    <div class="slogan"><img src="./img/f2e.png" alt="" /></div>
-                    <div class="grade">4th</div>
-                </div>
-                <p class="mainText_des">
-                    前端工程師和介面<br />設計師，攜手合作<br />拿獎金
-                </p>
-                <p>
-                    羨慕別人的酷酷網頁動畫？<br />滿足不了同事的許願？<br />動畫技能樹太雜無從下手？
-                </p>
-            </div>
-            <div class="rightPage">
-                <ul class="mainText_list">
-                    <li>
-                        報名總人數<span><img src="./img/1158.png" alt="" /></span>人
-                    </li>
-                    <li>
-                        個人賽人數<span><img src="./img/1052.png" alt="" /></span>人
-                    </li>
-                    <li>
-                        團體賽人數<span><img src="./img/41.png" alt="" /></span>人
-                    </li>
-                </ul>
-            </div>
-        </div>
+    <section class="scrollPaper">
+        <div class="top"></div>
+        <div class="left"></div>
+        <div class="right"></div>
         <div class="mouse">
             <div class="mouse_item">
                 <div class="move"></div>
             </div>
             <div class="mouse_text">向下滾動</div>
         </div>
-        <div class="notion"><img src="./img/Rectangle.png" alt="" /></div>
-        <div class="hack">
-            <div class="hack_img"><img src="./img/hack.png" alt="" /></div>
-            <div class="hack_text">
-                個人獎<span>$3,000</span>團體獎<span>$10,000</span>
-            </div>
-        </div>
     </section>
 
-    <section class="guide">
-        <div class="guide_logo"><img src="./img/school.png" alt="" /></div>
-        <p class="guide_slogan">年度最強合作，三大關卡來襲</p>
-        <div class="lineBrown"></div>
-        <!-- 贊助公司 -->
-        <div class="company">
-            <div class="company_nav">
-                <p class="logoName">視差滾動<span>Parallax Scrolling</span></p>
-                <div class="logoImg"><img src="./img/companylogo1.png" alt="" /></div>
-            </div>
-            <div class="company_context">
-                <div class="logoImg mouse">
-                    <img src="./img/companyimg2.png" alt="" />
-                </div>
-                <div class="textBox">
-                    <h2>The F2E 活動網站設計</h2>
-                    <p>
-                        請參考本屆官網的首頁視差滾動技巧，並請您重新<br />redesign 本頁面來設計。
-                    </p>
-                    <div class="btnBox">
-                        <a href="" class="way">關卡攻略</a>
-                        <a href="" class="article">投稿</a>
-                    </div>
+    <div class="outsideContainer">
+        <nav class="nav">
+            <div class="nav_pc">
+                <div class="logo"><img src="./img/logo.png" alt="" /></div>
+                <div class="joinBox">
+                    <a href="">關卡任務</a>
+                    <a href="">競賽說明</a>
+                    <a href="" class="joinBox_sign">立即報名</a>
                 </div>
             </div>
-        </div>
-        <div class="company signName">
-            <div class="company_nav">
-                <p class="logoName">線上簽署<span>Canvas</span></p>
-                <div class="logoImg"><img src="./img/companylogo2.png" alt="" /></div>
+            <div class="nav_mobile">
+                <div class="menuLine"><img src="./img/menu.png" alt=""></div>
+                <a href="" class="join">立即報名</a>
             </div>
-            <div class="company_context">
-                <div class="logoImg logoImg2">
-                    <img src="./img/companyimg3.png" alt="" />
-                </div>
-                <div class="textBox">
-                    <h2>今晚，我想來點點簽</h2>
-                    <p>
-                        每次要 PDF 簽名都要列印出來再掃描好麻煩，自幹一個<br />Web 版本的簽名服務吧！
-                    </p>
-                    <div class="btnBox">
-                        <a href="" class="way">關卡攻略</a>
-                        <a href="" class="article">投稿</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="company company3">
-            <div class="company_nav">
-                <p class="logoName">Scrum<span>JS draggable</span></p>
-                <div class="logoImg"><img src="./img/companylogo3.png" alt="" /></div>
-            </div>
-            <div class="company_context">
-                <div class="logoImg logoImg3">
-                    <img src="./img/companyimg4.png" alt="" />
-                </div>
-                <div class="textBox">
-                    <h2>Scrum 新手村</h2>
-                    <p>
-                        設計關卡內容與網頁互動效果，透過頁面關卡來呈現知<br />識點，讓挑戰者藉由你設計的內容更了解 Scrum。
-                    </p>
-                    <div class="btnBox">
-                        <a href="" class="way">關卡攻略</a>
-                        <a href="" class="article">投稿</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- 比賽時間 -->
-        <div class="largeBar">賽程時間</div>
-        <div class="timeRange">
-            <ul>
-                <li>
-                    <p class="title">開始報名</p>
-                    <div class="square"></div>
-                    <p class="describe">
-                        10/13(四) 早上 11:00<br />至 11/6(日) 晚上 23:59
-                    </p>
-                </li>
-                <li>
-                    <p class="title">開賽</p>
-                    <div class="square"></div>
-                    <p class="describe">UI組、團體組開賽 10/31<br />前端組開賽 11 /7</p>
-                </li>
-                <li>
-                    <p class="title">登陸作品</p>
-                    <div class="square"></div>
-                    <p class="describe">
-                        10/31(一) 中午 12:00<br />至11/28(一) 中午 12:00
-                    </p>
-                </li>
-                <li>
-                    <p class="title">線上直播</p>
-                    <div class="square"></div>
-                    <p class="describe">11/3 至 11/24(每週四)</p>
-                </li>
-            </ul>
-            <ul class="justifyCenter">
-                <li>
-                    <p class="title">初選</p>
-                    <div class="square"></div>
-                    <p class="describe">12/05(五)</p>
-                </li>
-                <li>
-                    <p class="title">決選</p>
-                    <div class="square"></div>
-                    <p class="describe">12/05(五)</p>
-                </li>
-            </ul>
-            <p class="timeRange_des">初選：將由六角學院前端、UI 評審進行第一波篩選，並於 12/5（五）公布初選佳作名單。<br>決選：由三大企業針對該企業主題進行入圍獎最後篩選，並於 12/23（五）公布企業得獎名單。</p>
-        </div>
-        <!-- 獎勵 -->
-        <div class="largeBar">獎項</div>
-        <div class="gradeBox">
-            <div class="gradeBox_item">
-                <div class="itemImg"><img src="./img/copper.png" alt=""></div>
-                <p class="itemText">每個關卡各 1 組</p>
-            </div>
-            <div class="gradeBox_item item2">
-                <div class="itemImg"><img src="./img/silver.png" alt=""></div>
-                <p class="itemText">每個關卡各 2 名，<br>設計 1 名、前端 1 名</p>
-            </div>
-            <div class="gradeBox_item">
-                <div class="itemImg"><img src="./img/gold.png" alt=""></div>
-                <p class="itemText">每個關卡個人組十位<br>、團體組十組</p>
-            </div>
-        </div>
-        <p class="gradeNotice">以上皆提供完賽數位獎狀</p>
-        <!-- 大神 -->
-        <div class="largeBar">各界大神直播分享</div>
-        <div class="shareBox">
-            <ul>
-                <li>
-                    <div class="shareBox_title">網站的動態趨勢</div>
-                    <div class="shareBox_img">
-                        <div class="gifImg"></div>
-                        <div class="describe"></div>
-                    </div>
-                    <div class="shareBox_time"></div>
-                </li>
-                <li>
-                    <div class="shareBox_title">jQuery 也可以做到的互動效果</div>
-                    <div class="shareBox_img">
-                        <div class="gifImg"></div>
-                        <div class="describe"></div>
-                    </div>
-                    <div class="shareBox_time"></div>
-                </li>
-            </ul>
-            <ul class="teacherGroup">
-                <li>
-                    <div class="shareBox_title">網頁可以拖拖拉拉draggable.js 介紹</div>
-                    <div class="shareBox_img">
-                        <div class="gifImg"></div>
-                        <div class="describe"></div>
-                    </div>
-                    <div class="shareBox_time"></div>
-                </li>
-                <li>
-                    <div class="shareBox_title">互動式網頁設計工程師該具備哪些技能？</div>
-                    <div class="shareBox_img">
-                        <div class="gifImg"></div>
-                        <div class="describe"></div>
-                    </div>
-                    <div class="shareBox_time"></div>
-                </li>
-            </ul>
-        </div>
-    </section>
+        </nav>
 
-    <script src="js/main.js" type="text/javascript">
-        AOS.init()
-    </script>
+        <section class="mainIndex">
+            <div class="mainText">
+                <div class="leftPage">
+                    <div class="mainText_f2e">
+                        <div class="slogan"><img src="./img/f2e.png" alt="" /></div>
+                        <div class="grade">4th</div>
+                    </div>
+                    <p class="mainText_des m-dn">
+                        前端工程師和介面設計師，攜手合作拿獎金
+                    </p>
+                    <p class="pad-dn">
+                        羨慕別人的酷酷網頁動畫？<br />滿足不了同事的許願？<br />動畫技能樹太雜無從下手？
+                    </p>
+                </div>
+                <div class="rightPage">
+                    <ul class="mainText_list pad-dn">
+                        <li>
+                            報名總人數<span><img src="./img/1158.png" alt="" /></span>人
+                        </li>
+                        <li>
+                            個人賽人數<span><img src="./img/1052.png" alt="" /></span>人
+                        </li>
+                        <li>
+                            團體賽人數<span><img src="./img/41.png" alt="" /></span>人
+                        </li>
+                    </ul>
+                </div>
+                <div class="mainSlogan m-db">
+                    <div class="title">前端工程師和介面設計師，攜手合作拿獎金</div>
+                    <div class="describe">羨慕別人的酷酷網頁動畫？滿足不了同事的許願？動畫技能樹太雜無從下手？</div>
+                </div>
+            </div>
+            <div class="mouse pad-dn">
+                <div class="mouse_item">
+                    <div class="move"></div>
+                </div>
+                <div class="mouse_text">向下滾動</div>
+            </div>
+            <div class="notion"><img src="./img/Rectangle.png" alt="" /></div>
+            <div class="hack">
+                <div class="hack_img"><img src="./img/hack.png" alt="" /></div>
+                <div class="hack_text">
+                    個人獎<span>$3,000</span>團體獎<span>$10,000</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="guide">
+            <div class="guideBlock">
+                <div class="guideBlock_text">
+                    <div class="guide_logo"><img src="./img/school.png" alt="" /></div>
+                    <p class="guide_slogan">年度最強合作，三大關卡來襲</p>
+                    <div class="lineBrown m-db"></div>
+                </div>
+                <div class="lineBrown pad-dn"></div>
+                <!-- 贊助公司 -->
+                <div class="company" data-aos="fade-right">
+                    <div class="company_nav">
+                        <p class="logoName pad-dn">視差滾動<span>Parallax Scrolling</span></p>
+                        <div class="logoImg"><img src="./img/companylogo1.png" alt="" /></div>
+                    </div>
+                    <div class="company_context">
+                        <div class="logoImg mouse">
+                            <img src="./img/companyimg2.png" alt="" />
+                        </div>
+                        <div class="textBox">
+                            <h2>The F2E 活動網站設計</h2>
+                            <p>
+                                請參考本屆官網的首頁視差滾動技巧，並請您重新<br class="pad-dn" />redesign 本頁面來設計。
+                            </p>
+                            <div class="btnBox">
+                                <a href="" class="way">關卡攻略</a>
+                                <a href="" class="article">投稿</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="company signName" data-aos="fade-left">
+                    <div class="company_nav">
+                        <p class="logoName pad-dn">線上簽署<span>Canvas</span></p>
+                        <div class="logoImg img2"><img src="./img/companylogo2.png" alt="" /></div>
+                    </div>
+                    <div class="company_context">
+                        <div class="logoImg logoImg2">
+                            <img src="./img/companyimg3.png" alt="" />
+                        </div>
+                        <div class="textBox">
+                            <h2>今晚，我想來點點簽</h2>
+                            <p>
+                                每次要 PDF 簽名都要列印出來再掃描好麻煩，自幹一個<br class="pad-dn" />Web 版本的簽名服務吧！
+                            </p>
+                            <div class="btnBox">
+                                <a href="" class="way">關卡攻略</a>
+                                <a href="" class="article">投稿</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="company company3" data-aos="fade-right">
+                    <div class="company_nav">
+                        <p class="logoName pad-dn">Scrum<span>JS draggable</span></p>
+                        <div class="logoImg"><img src="./img/companylogo3.png" alt="" /></div>
+                    </div>
+                    <div class="company_context">
+                        <div class="logoImg logoImg3">
+                            <img src="./img/companyimg4.png" alt="" />
+                        </div>
+                        <div class="textBox">
+                            <h2 class="trans-top">Scrum 新手村</h2>
+                            <p>
+                                設計關卡內容與網頁互動效果，透過頁面關卡來呈現知<br class="pad-dn" />識點，讓挑戰者藉由你設計的內容更了解 Scrum。
+                            </p>
+                            <div class="btnBox">
+                                <a href="" class="way">關卡攻略</a>
+                                <a href="" class="article">投稿</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 比賽時間 -->
+            <div class="largeBar">賽程時間</div>
+            <div class="timeRange">
+                <div class="timeRange_scroll">
+                    <ul>
+                        <li class="activity1">
+                            <p class="title">開始報名</p>
+                            <div class="square"></div>
+                            <p class="describe">
+                                10/13(四) 早上 11:00<br />至 11/6(日) 晚上 23:59
+                            </p>
+                        </li>
+                        <li class="activity2">
+                            <p class="title">開賽</p>
+                            <div class="square"></div>
+                            <p class="describe">UI組、團體組開賽 10/31<br />前端組開賽 11 /7</p>
+                        </li>
+                        <li class="activity3">
+                            <p class="title">登陸作品</p>
+                            <div class="square"></div>
+                            <p class="describe">
+                                10/31(一) 中午 12:00<br />至11/28(一) 中午 12:00
+                            </p>
+                        </li>
+                        <li class="activity4">
+                            <p class="title">線上直播</p>
+                            <div class="square"></div>
+                            <p class="describe">11/3 至 11/24(每週四)</p>
+                        </li>
+                    </ul>
+                    <ul class="justifyCenter pad-df">
+                        <li class="activity5">
+                            <p class="title">初選</p>
+                            <div class="square"></div>
+                            <p class="describe">12/05(五)</p>
+                        </li>
+                        <li class="activity6">
+                            <p class="title">決選</p>
+                            <div class="square"></div>
+                            <p class="describe">12/05(五)</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <ul class="justifyCenter pad-dn container2">
+                    <li class="activity5">
+                        <p class="title">初選</p>
+                        <div class="square"></div>
+                        <p class="describe">12/05(五)</p>
+                    </li>
+                    <li class="activity6">
+                        <p class="title">決選</p>
+                        <div class="square"></div>
+                        <p class="describe">12/05(五)</p>
+                    </li>
+                </ul>
+                <p class="timeRange_des m-dn">初選：將由六角學院前端、UI 評審進行第一波篩選，並於 12/5（五）公布初選佳作名單。<br>決選：由三大企業針對該企業主題進行入圍獎最後篩選，並於 12/23（五）公布企業得獎名單。</p>
+            </div>
+            <!-- 獎勵 -->
+            <div class="largeBar">獎項</div>
+            <div class="gradeBox" data-aos="fade-down">
+                <div class="gradeBox_item">
+                    <div class="itemImg"><img src="./img/copper.png" alt=""></div>
+                    <p class="itemText">每個關卡各 1 組</p>
+                </div>
+                <div class="gradeBox_item item2" data-aos="fade-down">
+                    <div class="itemImg"><img src="./img/silver.png" alt=""></div>
+                    <p class="itemText">每個關卡各 2 名，<br>設計 1 名、前端 1 名</p>
+                </div>
+                <div class="gradeBox_item" data-aos="fade-down">
+                    <div class="itemImg"><img src="./img/gold.png" alt=""></div>
+                    <p class="itemText">每個關卡個人組十位<br>、團體組十組</p>
+                </div>
+                <div class="gradeBox_item pad-df">以上皆提供完賽<br class="m-dn">數位獎狀</div>
+            </div>
+            <p class="gradeNotice pad-dn">以上皆提供完賽數位獎狀</p>
+            <!-- 大神 -->
+            <div class="largeBar">各界大神直播分享</div>
+            <div class="shareBox">
+                <ul>
+                    <li>
+                        <div class="shareBox_title item1">網站的動態趨勢</div>
+                        <div class="shareBox_img">
+                            <div class="gifImg"></div>
+                            <div class="describe">李明<br>版塊設計創辦人兼總監</div>
+                        </div>
+                        <div class="shareBox_time">11/03(四)20:00 ~ 21:30</div>
+                    </li>
+                    <li>
+                        <div class="shareBox_title">jQuery 也可以做到的互動效果</div>
+                        <div class="shareBox_img">
+                            <div class="gifImg"></div>
+                            <div class="describe">Leo<br>Angular Taiwan 傳教士</div>
+                        </div>
+                        <div class="shareBox_time">11/10(四)20:00 ~ 21:30</div>
+                    </li>
+                </ul>
+                <ul class="teacherGroup">
+                    <li>
+                        <div class="shareBox_title">網頁可以拖拖拉拉draggable.js 介紹</div>
+                        <div class="shareBox_img">
+                            <div class="gifImg"></div>
+                            <div class="describe">邱繼緯<br>前端工程師</div>
+                        </div>
+                        <div class="shareBox_time">11/17(四)20:00 ~ 21:30</div>
+                    </li>
+                    <li>
+                        <div class="shareBox_title">互動式網頁設計工程師該具備哪些技能？</div>
+                        <div class="shareBox_img">
+                            <div class="gifImg"></div>
+                            <div class="describe">吳哲宇<br>墨雨互動設計創辦人</div>
+                        </div>
+                        <div class="shareBox_time">11/24(四)20:00 ~ 21:30</div>
+                    </li>
+                </ul>
+            </div>
+            <!-- footer -->
+            <footer class="footer">
+                <div class="footer_support">
+                    <div class="supportImg"><img src="./img/support1.png" alt=""></div>
+                    <div class="supportImg img2"><img src="./img/support2.png" alt=""></div>
+                    <div class="supportImg img3"><img src="./img/support3.png" alt=""></div>
+                    <div class="supportImg img4"><img src="./img/support4.png" alt=""></div>
+                </div>
+                <div class="footer_company">
+                    <div class="title">贊助單位</div>
+                    <div class="companyBox">
+                        <div class="companyBox_img"><img src="./img/companylogo1.png" alt=""></div>
+                        <div class="companyBox_img img2"><img src="./img/companylogo2.png" alt=""></div>
+                        <div class="companyBox_img img3"><img src="./img/companylogo3.png" alt=""></div>
+                    </div>
+                    <p class="copyright">六角日報 © Code: Kyle / Design: KT</p>
+                </div>
+            </footer>
+        </section>
+    </div>
+
+    <script src="js/main.js" type="text/javascript"></script>
 </body>
 
 </html>

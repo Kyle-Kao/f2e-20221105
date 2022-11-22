@@ -1,0 +1,25 @@
+.pad-dn {
+    @media(max-width: 769px) {
+        display: none !important;
+    }
+}
+
+.pad-df {
+    display: none !important;
+    @media(max-width: 768px) {
+        display: flex !important;
+    }
+}
+
+.m-dn {
+    @media(max-width: 375px) {
+        display: none !important;
+    }
+}
+
+.m-db {
+    display: none;
+    @media(max-width: 375px) {
+        display: block !important;
+    }
+}
